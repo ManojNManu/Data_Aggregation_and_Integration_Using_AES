@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+    <head>
+        <title>Health Monitoring</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8" />
+        <meta name="keywords" content="Directory Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+              SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+        <script>
+            addEventListener("load", function () {
+                setTimeout(hideURLbar, 0);
+            }, false);
+
+            function hideURLbar() {
+                window.scrollTo(0, 1);
+            }
+        </script>
+        <link href="static/css/bootstrap.min.css" type="text/css" rel="stylesheet" media="all">
+        <link href="static/css/style.css" type="text/css" rel="stylesheet" media="all">
+        <link href="static/css/timeline.css" type="text/css" rel="stylesheet" media="all">
+        <link href="static/css/font-awesome.min.css" rel="stylesheet">
+        <link href="//fonts.googleapis.com/css?family=Libre+Franklin:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+              rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- header -->
+        <header>
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light p-0" style="width: 76em;">
+                    <h1><a class="navbar-brand" href="/">
+                            <span>H</span>Health Monitoring
+                        </a></h1>
+                    <button class="navbar-toggler ml-lg-auto ml-sm-5 bg-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left: -5%;">
+                        <ul class="navbar-nav text-center mx-auto">
+                            <li class="nav-item active  mr-lg-4 mt-lg-0 mt-sm-4 mt-3" style="margin-left: 6em">
+                                <a class="hover-fill" href="/adminhome" data-txthover="Home">Home</a>
+                            </li>
+                            <li class="nav-item active  mr-lg-4 mt-lg-0 mt-sm-4 mt-3" >
+                                <a class="hover-fill" href="/addhospital" data-txthover="Add Hospital">Add Hospital</a>
+                            </li>
+                            <li class="nav-item active  mr-lg-4 mt-lg-0 mt-sm-4 mt-3">
+                                <a class="hover-fill" href="/viewhospital" data-txthover="View Hospital">View Hospital</a>
+                            </li>
+                            <li class="nav-item active  mr-lg-4 mt-lg-0 mt-sm-4 mt-3">
+                                <a class="hover-fill" href="/adddoctor" data-txthover="Add Doctor">Add Doctor</a>
+                            </li>
+                            <li class="nav-item active  mr-lg-4 mt-lg-0 mt-sm-4 mt-3">
+                                <a class="hover-fill" href="/viewdoctor" data-txthover="View Doctor">View Doctor</a>
+                            </li>
+                            <li class="nav-item active  mr-lg-4 mt-lg-0 mt-sm-4 mt-3">
+                                <a class="hover-fill" href="/adminnviewpatient" data-txthover="Patient">Patient</a>
+                            </li>
+                            <li class="nav-item  mr-lg-4 mt-lg-0 mt-sm-4 mt-3">
+                                <a class="hover-fill" href="/" data-txthover="Log Out">Log Out</a>
+                            </li>
+
+
+                        </ul>
+
+                    </div>
+                </nav>
+            </div>
+        </header>
+<div class="inner-banner-w3ls d-flex align-items-center text-center">
+    <div class="container">
+        <h6 class="agileinfo-title">Add Medical Details</h6>
+        <ul class="breadcrumb-parent d-flex justify-content-center">
+            <li class="breadcrumb-nav">
+                <a href="home.jsp">Home</a>
+            </li>
+            <li class="breadcrumb-nav active  text-capitalize" aria-current="page">Doctor</li>
+        </ul>
+    </div>
+</div>
+<section class="about-w3pvt-bot sec-space position-relative clip-wthree_bot" id="contact-form">
+    <div class="container">
+        <div class="about-row row">
+            <div class="col-md-3"></div>
+            <!--             <h1>Add Users</h1>-->
+            <div class="col-md-6" style="background: #ffffff;padding: 4em">
+
+                <!-- register form grid -->
+                <div class="register-top1">
+                    <form action="/adminAddingmedicaldetail" onsubmit="return CheckValidation1()" method="POST" class="register-wthree">
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label>
+                                        Blood Pressure
+                                    </label>
+                                    <input class="form-control" readonly type="text" placeholder="Blood Pressure" name="bp" id="bp"
+                                           style="margin-bottom: 1rem">
+                                </div>
+                                <div class="col-md-12">
+                                    <label>
+                                        Heart Rate
+                                    </label>
+                                    <input class="form-control" readonly type="text" placeholder="Heart Rate" name="hr" id="hr"
+                                           style="margin-bottom: 1rem">
+                                </div>
+                                <div class="col-md-12">
+                                    <label>
+                                        Blood Group
+                                    </label>
+                                    <select name="bg" class="form-control" id="bg" value="-1" placeholder="Blood Group"  style="margin-bottom:5%">
+                                      <option value=""></option>
+                                     <option value="A+">A+</option>
+                                    <option value="B+">B+</option>
+                                    <option value="O+">O+</option>
+                                    <option value="AB+">AB+</option>
+                                    <option value="A-">A-</option>
+                                    <option value="B-">B-</option>
+                                     <option value="O-">O-</option>
+                                    <option value="AB-">AB-</option>
+                                    </select>
+<!--                                    <input class="form-control" type="text" placeholder="Blood Group" name="bg" id="bg"-->
+<!--                                           style="margin-bottom: 1rem">-->
+                                </div>
+                                <div class="col-md-12">
+                                    <label>
+                                        Temperature
+                                    </label>
+                                    <input class="form-control" readonly type="text" placeholder="Temperature" name="tem" id="tem" value=""
+                                           style="margin-bottom: 1rem">
+                                </div>
+                                <div class="col-md-12">
+                                    <label>
+                                        Health issue
+                                    </label>
+                                    <input class="form-control" type="text" placeholder="Health issue" name="hissue" id="hissue"
+                                           style="margin-bottom: 1rem">
+                                </div>
+                                <div class="col-md-12">
+                                    <label>
+                                        Response to Medication
+                                    </label>
+                                    <input class="form-control" type="text" placeholder="Response to Medication" name="rmedical" id="rmedical"
+                                           style="margin-bottom: 1rem">
+                                    <input type="hidden" id="pid" name="pid">
+                                </div>
+
+                                <div class="col-md-12">
+                                    <label>
+                                        Doctor Name
+                                    </label>
+                                    <select class="form-control" name="dname" id="dname" value="1"   style="margin-bottom: 1rem">
+                                        {% for d in datadoc %}
+	                                <option value={{d[0]}}>{{d[1]}}</option>
+                                        {% endfor %}
+                                     </select>
+<!--                                    <input class="form-control" type="text" placeholder="Doctor Name" name="dname" id="dname"-->
+<!--                                           style="margin-bottom: 1rem">-->
+                                    <input class="form-control" type="hidden" placeholder="Doctor Name" name="pmid" id="pmid"
+                                           style="margin-bottom: 1rem">
+                                </div>
+                                <div class="col-md-12">
+                                    <label>
+                                        Hospital Name
+                                    </label>
+                                     <select class="form-control" name="hn" id="hn" value="1" style="margin-bottom: 1rem">
+                                        {% for h in datahos %}
+	                                <option value={{h[0]}}>{{h[1]}}</option>
+                                        {% endfor %}
+                                    </select>
+<!--                                    <input class="form-control" type="text" placeholder="Hospital Name" name="hn" id="hn"-->
+<!--                                           style="margin-bottom: 1rem">-->
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="row mt-3">
+                            <div class="col-md-12">
+                                <button type="submit" id="add" class="btn btn-agile btn-block w-100 font-weight-bold text-uppercase">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <!--  //register form grid ends here -->
+                <div class="border-pos-wthree border-exp"></div>
+
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+    </div>
+    <h3 class="text-exp">Hospital</h3>
+</section>
+        <footer>
+            <div class="container">
+                <div class="d-lg-flex justify-content-between align-items-center copy-right-wthree">
+                    <h2><a class="navbar-brand text-center" href="/">
+                            <span>H</span>Health Monitoring
+                        </a></h2>
+                    <div class="cpy-right text-center">
+                        <p class="text-white">© 2022 Health Monitoring. All rights reserved | Design by
+                            <a href="#" class="text-theme"> Health Monitoring.</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <script src="static/js/jquery-2.2.3.min.js"> </script>
+        <!-- script for password match -->
+
+        <!-- script for password match -->
+
+        <!-- //js -->
+        <script src="static/js/move-top.js"></script>
+        <script src="static/js/easing.js"></script>
+
+        <script>
+                let min = parseInt("35");
+                let max = parseInt("90");
+
+                let a = Math.floor(Math.random() * (max - min + 1)) + min;
+                document.getElementById("tem").value = a;
+
+                let minbp = parseInt("120");
+                let maxbp = parseInt("180");
+
+                let b = Math.floor(Math.random() * (maxbp - minbp + 1)) + minbp;
+                document.getElementById("bp").value = b;
+
+                let minhr = parseInt("80");
+                let maxhr = parseInt("140");
+
+                let c = Math.floor(Math.random() * (maxhr - minhr + 1)) + minhr;
+                document.getElementById("hr").value = c;
+
+        </script>
+        <script>
+                                jQuery(document).ready(function ($) {
+                                $("#pid").val(localStorage.getItem("pid"));
+                                    $(".scroll").click(function (event) {
+                                        event.preventDefault();
+
+                                        $('html,body').animate({
+                                            scrollTop: $(this.hash).offset().top
+                                        }, 1000);
+                                    });
+                                });
+        </script>
+        <!-- //end-smooth-scrolling -->
+        <!-- smooth-scrolling-of-move-up -->
+        <script>
+
+            $(document).ready(function () {
+
+                 var defaults = {
+                 containerID: 'toTop', // fading element id
+                 containerHoverID: 'toTopHover', // fading element hover id
+                 scrollSpeed: 1200,
+                 easingType: 'linear'
+                 };
+                $().UItoTop({
+                    easingType: 'easeOutQuart'
+                });
+
+            });
+
+
+        </script>
+        <script src="static/js/SmoothScroll.min.js"></script>
+        <!-- //smooth-scrolling-of-move-up -->
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="static/js/bootstrap.min.js"></script>
+    </body>
+
+</html>
+<script>
+
+    function CheckValidation1() {
+        var bp = $("#bp").val();
+        var hr = $("#hr").val();
+        var bg = $("#bg").val();
+        var tem = $("#tem").val();
+        var hissue = $("#hissue").val();
+        var rmedical = $("#rmedical").val();
+        var dname = $("#dname").val();
+        var hn = $("#hn").val();
+
+        if (bp == "" || bp == null) {
+            alert("Please Enter Blood Pressure");
+            $("#bp").focus();
+            return false;
+        } else if (hr == "" || hr == null) {
+            alert("Please Enter Heart Rate");
+            $("#hr").focus();
+            return false;
+        } else if (bg == "-1" || bg == null) {
+            alert("Please Select Blood Group");
+            $("#bg").focus();
+            return false;
+        } else if (tem == "" || tem == null) {
+            alert("Please Enter Temperature");
+            $("#tem").focus();
+            return false;
+        } else if (hissue == "" || hissue == null) {
+            alert("Please Enter  Health issue");
+            $("#hissue").focus();
+            return false;
+        }else if (rmedical == "" || rmedical == null) {
+            alert("Please Enter Response to Medication");
+            $("#rmedical").focus();
+            return false;
+        } else if (dname == "-1" || dname == null) {
+            alert("Please select Doctor Name");
+            $("#dname").focus();
+            return false;
+        }else if (hn == "-1" || hn == null) {
+            alert("Please select Hospital Name");
+            $("#hn").focus();
+            return false;
+        } else {
+         alert("Medical Details added successfully");
+            return true;
+        }
+    }
+
+</script>

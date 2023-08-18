@@ -1,0 +1,298 @@
+
+<!DOCTYPE html>
+<html lang="zxx">
+
+    <head>
+        <title>Health Monitoring</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8" />
+        <meta name="keywords" content="Directory Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+              SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+        <script>
+            addEventListener("load", function () {
+                setTimeout(hideURLbar, 0);
+            }, false);
+
+            function hideURLbar() {
+                window.scrollTo(0, 1);
+            }
+        </script>
+        <!-- Custom Theme files -->
+        <link href="static/css/bootstrap.min.css" type="text/css" rel="stylesheet" media="all">
+        <link href="static/css/style.css" type="text/css" rel="stylesheet" media="all">
+        <!-- timeline -->
+        <link href="static/css/timeline.css" type="text/css" rel="stylesheet" media="all">
+        <!-- font-awesome icons -->
+        <link href="static/css/font-awesome.min.css" rel="stylesheet">
+        <!-- //Custom Theme files -->
+        <!-- online-fonts -->
+        <link href="//fonts.googleapis.com/css?family=Libre+Franklin:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+              rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- header -->
+        <header>
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light p-0" style="width: 76em;">
+                    <h1><a class="navbar-brand" href="/">
+                            <span>H</span>Health Monitoring
+                        </a></h1>
+                    <button class="navbar-toggler ml-lg-auto ml-sm-5 bg-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left: -5%;">
+                        <ul class="navbar-nav text-center mx-auto">
+                            <li class="nav-item active  mr-lg-4 mt-lg-0 mt-sm-4 mt-3" style="margin-left: 6em">
+                                <a class="hover-fill" href="/adminhome" data-txthover="Home">Home</a>
+                            </li>
+                            <li class="nav-item active  mr-lg-4 mt-lg-0 mt-sm-4 mt-3" >
+                                <a class="hover-fill" href="/addhospital" data-txthover="Add Hospital">Add Hospital</a>
+                            </li>
+                            <li class="nav-item active  mr-lg-4 mt-lg-0 mt-sm-4 mt-3">
+                                <a class="hover-fill" href="/viewhospital" data-txthover="View Hospital">View Hospital</a>
+                            </li>
+                            <li class="nav-item active  mr-lg-4 mt-lg-0 mt-sm-4 mt-3">
+                                <a class="hover-fill" href="/adddoctor" data-txthover="Add Doctor">Add Doctor</a>
+                            </li>
+                            <li class="nav-item active  mr-lg-4 mt-lg-0 mt-sm-4 mt-3">
+                                <a class="hover-fill" href="/viewdoctor" data-txthover="View Doctor">View Doctor</a>
+                            </li>
+                            <li class="nav-item active  mr-lg-4 mt-lg-0 mt-sm-4 mt-3">
+                                <a class="hover-fill" href="/adminnviewpatient" data-txthover="Patient">Patient</a>
+                            </li>
+                            <li class="nav-item  mr-lg-4 mt-lg-0 mt-sm-4 mt-3">
+                                <a class="hover-fill" href="/" data-txthover="Log Out">Log Out</a>
+                            </li>
+
+
+                        </ul>
+
+                    </div>
+                </nav>
+            </div>
+        </header>
+<div class="inner-banner-w3ls d-flex align-items-center text-center">
+    <div class="container">
+        <h6 class="agileinfo-title">Add Hospital</h6>
+        <ul class="breadcrumb-parent d-flex justify-content-center">
+            <li class="breadcrumb-nav">
+                <a href="home.jsp">Home</a>
+            </li>
+            <li class="breadcrumb-nav active  text-capitalize" aria-current="page">Admin</li>
+        </ul>
+    </div>
+</div>
+<section class="about-w3pvt-bot sec-space position-relative clip-wthree_bot" id="contact-form">
+    <div class="container">
+        <div class="about-row row">
+            <div class="col-md-3"></div>
+            <!--             <h1>Add Users</h1>-->
+            <div class="col-md-6" style="background: #ffffff;padding: 4em">
+
+                <!-- register form grid -->
+                <div class="register-top1">
+                    <form action="/Adding_hospital" onsubmit="return CheckValidation()" method="post" class="register-wthree">
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label>
+                                        Hospital Name
+                                    </label>
+                                    <input class="form-control" type="text" placeholder="Hospital Name" name="hname" id="hname"
+                                           style="margin-bottom: 1rem">
+                                </div>
+                                <div class="col-md-12">
+                                    <label>
+                                        Hospital Address
+                                    </label>
+                                    <input class="form-control" type="text" placeholder="Hospital Address" name="hadrrs" id="hadrrs"
+                                           style="margin-bottom: 1rem">
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label>
+                                        City
+                                    </label>
+                                    <input class="form-control" type="text" placeholder="City" name="city" id="city"
+                                           style="margin-bottom: 1rem">
+                                </div>
+                                <div class="col-md-6">
+                                    <label>
+                                        State
+                                    </label>
+                                    <input class="form-control" type="text" placeholder="State" name="state" id="state"
+                                           style="margin-bottom: 1rem">
+                                </div>
+                                <div class="col-md-6">
+                                    <label>
+                                        Zip Code
+                                    </label>
+                                    <input class="form-control" type="text" maxlength="6" pattern="\d{6}" placeholder="Zip Code" name="zcode" id="zcode"
+                                           style="margin-bottom: 1rem">
+                                </div>
+                                <div class="col-md-6">
+                                    <label>
+                                        Country
+                                    </label>
+                                    <input class="form-control" type="text" placeholder="Country" name="country" id="country"
+                                           style="margin-bottom: 1rem">
+                                </div>
+                                <div class="col-md-6">
+                                    <label>
+                                        Hospital Phone Number
+                                    </label>
+                                    <input class="form-control" type="text" placeholder="Hospital Phone Number" name="hphone" id="hphone"
+                                           style="margin-bottom: 1rem">
+                                </div>
+                                <div class="col-md-6">
+                                    <label>
+                                        Hospital Email
+                                    </label>
+                                    <input class="form-control" type="text" placeholder="Email" name="hemail" id="hemail">
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="row mt-3">
+                            <div class="col-md-12">
+                                <button type="submit" id="add" class="btn btn-agile btn-block w-100 font-weight-bold text-uppercase">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <!--  //register form grid ends here -->
+                <div class="border-pos-wthree border-exp"></div>
+
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+    </div>
+    <h3 class="text-exp">Hospital</h3>
+</section>
+        <footer>
+            <div class="container">
+                <div class="d-lg-flex justify-content-between align-items-center copy-right-wthree">
+                    <h2><a class="navbar-brand text-center" href="/">
+                            <span>H</span>Health Monitoring
+                        </a></h2>
+                    <div class="cpy-right text-center">
+                        <p class="text-white">© 2022 Health Monitoring. All rights reserved | Design by
+                            <a href="#" class="text-theme"> Health Monitoring.</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <script src="static/js/jquery-2.2.3.min.js"></script>
+        <!-- script for password match -->
+
+        <!-- script for password match -->
+
+        <!-- //js -->
+        <script src="static/js/move-top.js"></script>
+        <script src="static/js/easing.js"></script>
+        <script>
+                                jQuery(document).ready(function ($) {
+                                    $(".scroll").click(function (event) {
+                                        event.preventDefault();
+
+                                        $('html,body').animate({
+                                            scrollTop: $(this.hash).offset().top
+                                        }, 1000);
+                                    });
+                                });
+        </script>
+        <!-- //end-smooth-scrolling -->
+        <!-- smooth-scrolling-of-move-up -->
+        <script>
+            $(document).ready(function () {
+                /*
+                 var defaults = {
+                 containerID: 'toTop', // fading element id
+                 containerHoverID: 'toTopHover', // fading element hover id
+                 scrollSpeed: 1200,
+                 easingType: 'linear'
+                 };
+                $().UItoTop({
+                    easingType: 'easeOutQuart'
+                });
+
+            });
+
+
+        </script>
+        <script src="static/js/SmoothScroll.min.js"></script>
+        <!-- //smooth-scrolling-of-move-up -->
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="static/js/bootstrap.min.js"></script>
+    </body>
+
+</html>
+<script>
+    function CheckValidation() {
+    alert("hi");
+        var hname = $("#hname").val();
+        var hadrrs = $("#hadrrs").val();
+        var city = $("#city").val();
+        var state = $("#state").val();
+        var zcode = $("#zcode").val();
+        var country = $("#country").val();
+        var hphone = $("#hphone").val();
+        var hemail = $("#hemail").val();
+        var e = '[a-z0-9]+@[a-z]+\.[a-z]{2,3}';
+
+        if (hname == "" || hname == null) {
+            alert("Please Enter Hospital Name");
+            $("#hname").focus();
+            return false;
+        } else if (hadrrs == "" || hadrrs == null) {
+            alert("Please Enter Hospital Address");
+            $("#hadrrs").focus();
+            return false;
+        } else if (city == "" || city == null) {
+            alert("Please Enter City");
+            $("#city").focus();
+            return false;
+        } else if (state == "" || state == null) {
+            alert("Please Enter State");
+            $("#state").focus();
+            return false;
+        } else if (zcode == "" || zcode == null) {
+            alert("Please Enter Zip Code");
+            $("#zcode").focus();
+            return false;
+           } else if (zcode.search(pin) == "-1") {
+            alert("Please enter valid Pin code");
+            $("#zcode").focus();
+            return false;
+        }else if (country == "" || country == null) {
+            alert("Please Enter Country");
+            $("#country").focus();
+            return false;
+       }else if (hphone == "" || hphone == null) {
+            alert("Please Enter Phone number");
+            $("#hphone").focus();
+            return false;
+        } else if (hemail == "" || hemail == null) {
+            alert("Please Enter Email");
+            $("#hemail").focus();
+            return false;
+        } else if (hemail.search(e) == "-1") {
+            alert("Please enter valid email");
+            $("#hemail").focus();
+            return false;
+        } else {
+            alert("Hospital added successfully");
+            return true;
+        }
+    }
+</script>

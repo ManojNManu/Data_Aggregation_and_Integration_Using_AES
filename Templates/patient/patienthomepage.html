@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+    <head>
+        <title>Health Monitoring</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8" />
+        <meta name="keywords" content="Directory Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+              SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+        <script>
+            addEventListener("load", function () {
+                setTimeout(hideURLbar, 0);
+            }, false);
+
+            function hideURLbar() {
+                window.scrollTo(0, 1);
+            }
+        </script>
+        <!-- Custom Theme files -->
+        <link href="static/css/bootstrap.min.css" type="text/css" rel="stylesheet" media="all">
+        <link href="static/css/style.css" type="text/css" rel="stylesheet" media="all">
+        <!-- timeline -->
+        <link href="static/css/timeline.css" type="text/css" rel="stylesheet" media="all">
+        <!-- font-awesome icons -->
+        <link href="static/css/font-awesome.min.css" rel="stylesheet">
+        <!-- //Custom Theme files -->
+        <!-- online-fonts -->
+        <link href="//fonts.googleapis.com/css?family=Libre+Franklin:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+              rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- header -->
+        <header>
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light p-0" style="width: 76em;">
+                    <h1><a class="navbar-brand" href="/">
+                            <span>H</span>Health Monitoring
+                        </a></h1>
+                    <button class="navbar-toggler ml-lg-auto ml-sm-5 bg-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left: -5%;">
+                        <ul class="navbar-nav text-center mx-auto">
+                            <li class="nav-item active  mr-lg-4 mt-lg-0 mt-sm-4 mt-3" style="margin-left: 6em">
+                                <a class="hover-fill" href="/patienthomepage" data-txthover="Home">Home</a>
+                            </li>
+
+<!--                            <li class="nav-item active  mr-lg-4 mt-lg-0 mt-sm-4 mt-3" >-->
+<!--                                <a class="hover-fill" href="/" data-txthover="Profile">Profile</a>-->
+<!--                            </li>-->
+                            <li class="nav-item active  mr-lg-4 mt-lg-0 mt-sm-4 mt-3">
+                                <a class="hover-fill" href="/viewmedicaldetails1" data-txthover="View Medical Details">View Medical Details</a>
+                            </li>
+                            <li class="nav-item active  mr-lg-4 mt-lg-0 mt-sm-4 mt-3">
+                                <a class="hover-fill" href="/doctor" data-txthover="Logout">Logout </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- //header -->
+        <!-- banner -->
+        <div class="container-fluid banner-w3pvt-bg">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div id="home" class="banner-w3pvt  d-flex align-items-center">
+                        <div class="container">
+                            <div class="d-flex flex-column">
+                                <div class="bnr-txt-w3pvt  d-sm-flex justify-content-center align-items-center">
+                                    <!--                                    <div class="bnr-w3pvt-txt text-center">
+                                                                            <h3>business intellect</h3>
+                                                                            <div class="d-flex justify-content-between bnr-sub-txt align-items-center">
+                                                                                <span></span>
+                                                                                <p class="text-uppercase">making your ideas happen</p>
+                                                                                <span></span>
+                                                                            </div>
+                                                                        </div>-->
+                                </div>
+                                <div class="mt-auto">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 banner2-w3pvt"></div>
+            </div>
+        </div>
+        <!-- follow us -->
+        <footer>
+            <div class="container">
+                <div class="d-lg-flex justify-content-between align-items-center copy-right-wthree">
+                    <h2><a class="navbar-brand text-center" href="/">
+                            <span>H</span>Health Monitoring
+                        </a></h2>
+                    <div class="cpy-right text-center">
+                        <p class="text-white">© 2022 Health Monitoring. All rights reserved | Design by
+                            <a href="#" class="text-theme">Health Monitoring.</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- js -->
+        <script src="static/js/jquery-2.2.3.min.js"></script>
+        <!-- script for password match -->
+        <script>
+            window.onload = function () {
+                document.getElementById("password1").onchange = validatePassword;
+                document.getElementById("password2").onchange = validatePassword;
+            }
+
+            function validatePassword() {
+                var pass2 = document.getElementById("password2").value;
+                var pass1 = document.getElementById("password1").value;
+                if (pass1 != pass2)
+                    document.getElementById("password2").setCustomValidity("Passwords Don't Match");
+                else
+                    document.getElementById("password2").setCustomValidity('');
+                //empty string means no validation error
+            }
+        </script>
+        <!-- script for password match -->
+
+        <!-- //js -->
+        <script src="static/js/move-top.js"></script>
+        <script src="static/js/easing.js"></script>
+        <script>
+            jQuery(document).ready(function ($) {
+                $(".scroll").click(function (event) {
+                    event.preventDefault();
+
+                    $('html,body').animate({
+                        scrollTop: $(this.hash).offset().top
+                    }, 1000);
+                });
+            });
+        </script>
+        <!-- //end-smooth-scrolling -->
+        <!-- smooth-scrolling-of-move-up -->
+        <script>
+            $(document).ready(function () {
+                /*
+                 var defaults = {
+                 containerID: 'toTop', // fading element id
+                 containerHoverID: 'toTopHover', // fading element hover id
+                 scrollSpeed: 1200,
+                 easingType: 'linear'
+                 };
+                 */
+
+                $().UItoTop({
+                    easingType: 'easeOutQuart'
+                });
+
+            });
+        </script>
+        <script src="static/js/SmoothScroll.min.js"></script>
+        <!-- //smooth-scrolling-of-move-up -->
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="static/js/bootstrap.min.js"></script>
+    </body>
+
+</html>
